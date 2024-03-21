@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://20.188.114.120:8080
+functions:
+  api:
+    lang: python3-http
+    handler: ./api
+    image: giegrajo/api:latest
+
